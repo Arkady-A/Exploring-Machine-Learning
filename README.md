@@ -4,8 +4,8 @@ Machine learning algorithms implementation in python with references, and with s
 By opening ipynb files in corresponding directories you should see a notebook with explaining how the algorithm works.
 ### Currenlty explored algorithms:  
 * [Linear regression](../master/Classification/Logistic%20Regression.ipynb)
-* [Linear classification](/MachineLearning/Regression/Linear%20Regressions.ipynb)
-* [Principal Component Analysis](/Dimensionality%20Reduction/Principal%20Component%20Analysis%20\%28PCA%29/Principal%20Component%20Analysis.ipynb)
+* [Linear classification](../master/Regression/Linear%20Regressions.ipynb)
+* [Principal Component Analysis](../master/Dimensionality%20Reduction/Principal%20Component%20Analysis%20\%28PCA%29/Principal%20Component%20Analysis.ipynb)
 
 ### Next algorithms: 
 * Decision trees (classification and regression)
