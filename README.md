@@ -2,16 +2,16 @@
 Machine learning algorithms implementation in python with references, and with sketchy explanations. 
 
 By opening ipynb files you should see a notebook that will explain you how an algorithm of you choose work.
-###Currenlty explored algorithms: 
-* [Linear regression](/Classification/Logistic\ Regression.ipynb)
-* [Linear classification](/MachineLearning/Regression/Linear\ Regressions.ipynb)
-* [Principal Component Analysis](/Dimensionality\ Reduction/Principal\ Component\ Analysis\ \(PCA\)/Principal\ Component\ Analysis.ipynb)
+### Currenlty explored algorithms:  
+* [Linear regression](../master/Classification/Logistic%20Regression.ipynb)
+* [Linear classification](/MachineLearning/Regression/Linear%20Regressions.ipynb)
+* [Principal Component Analysis](/Dimensionality%20Reduction/Principal%20Component%20Analysis%20\%28PCA%29/Principal%20Component%20Analysis.ipynb)
 
-###Next algorithms: 
+### Next algorithms: 
 * Decision trees (classification and regression)
 * Support Vector Machine
 
-###In plans:
+### In plans:
 * Gradient boosted decision trees
 * k-means
 * Naive bayes
@@ -21,7 +21,7 @@ By opening ipynb files you should see a notebook that will explain you how an al
 * Learning Vector Quantization
 * Back propagation neural network
 
-###In considerations:
+### In considerations:
 * Deep learning algorithms
 
 
