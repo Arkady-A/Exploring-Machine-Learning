@@ -1,4 +1,4 @@
-# Machine Learning
+# Exploring Machine Learning
 Machine learning algorithms implementation in python with references, and with sketchy explanations. 
 
 By opening ipynb files in corresponding directories you should see a notebook with explaining how the algorithm works.
