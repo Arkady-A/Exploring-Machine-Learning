@@ -81,7 +81,7 @@ class Itheory():
     @staticmethod
 #    note: if you were to check this function with the function in scipy.stats 
 #    you will get different values# because scipy calculates entropy with base 
-#    10 instead of 2. The values is different, but they showing same thing. you 
+#    e instead of 2. The values is different, but they showing same thing. you 
 #    can say that the function in scipy return decibels of entropy whereas
 #    the function beneath returns bits (shannons)
 #    of entropy.
@@ -209,14 +209,25 @@ class Itheory():
 
 # TO-DO: Add docs to utility.
 class Utility():
+    
     @staticmethod
     def make_ax_look_good(ax):
+        '''
+        Makes axes look fancy :)
+        
+        Parameters
+        ----------
+        ax : matplotlib axes
+        '''
         ax.grid(alpha=0.2)
         for spine in ax.spines:
                 ax.spines[spine].set_visible(False)
                 
     @staticmethod
     def less_ent_d(s, step_m = 2, low_boundary = 4, times =2 ):
+        '''
+        Changes distribution such that the entropy descends.
+        '''
         mult = 2 
         s_m = s.mean().round().astype('int')
         vals = np.array(np.unique(s,return_counts=True))
@@ -240,6 +251,9 @@ class Utility():
    
     @staticmethod
     def less_ent(dist, multiplier=0.01,steps=2, low_border=0.004):
+        '''
+        Chages data such that the entropy descends.
+        '''
         size = len(dist)
         s_indx = np.argmax(dist!=0)
         e_indx = np.argmax(np.flip(dist)!=0)
@@ -270,6 +284,23 @@ class Utility():
     #multiplier: greater - more shufflier
     @staticmethod
     def shuffle_dist(dist, times=10, multiplier=0.4):
+        '''
+        Changes values of distribtuions. Depends on variables that are passed.
+
+        Parameters
+        ----------
+        dist : nparray
+            distribution of a random variable
+        times : int
+            amount of times for the process to repeat
+        multiplier : float
+            determines how much the function will change the distribution on a iteration
+
+        Returns
+        ----------
+        dist : nparray
+            changed distribtuion
+        '''
         deck = dist[dist!=0]
         start_index = np.argmax(dist!=0)
         end_index = start_index+deck.shape[0]
@@ -291,6 +322,10 @@ class Utility():
         
     @staticmethod
     def shuffle_data(data, chance = 0.5, times=10, count_low_boundary=1, count_max_boundary=40):
+        '''
+        Changes data by changing a value to another value. Another value can be picked from range of
+        unique values that are presented in the data. 
+        '''
         uni,vals = np.unique(data,return_counts = True)
         for j in range(0, times):
             for i in range(data.shape[0]):
