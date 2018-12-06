@@ -1,7 +1,7 @@
 # Exploring Machine Learning
 Machine learning algorithms implementation in python with references, and with sketchy explanations. 
 
-By opening ipynb files in corresponding directories you should see a notebook with explaining how the algorithm works.
+By opening .ipynb files in corresponding directories you'll see a notebook with the explanation.
 ### Currenlty explored algorithms:  
 * [Linear regression](../master/Classification/Logistic%20Regression.ipynb)
 * [Linear classification](../master/Regression/Linear%20Regressions.ipynb)
